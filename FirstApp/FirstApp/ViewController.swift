@@ -10,13 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var numberOnScreen : Double = 0
-    @IBOutlet weak var label: UILabel!
-    @IBAction func numbers(_ sender: UIButton) {
-        label.text = label.text! + String(sender.tag-1)
-        numberOnScreen = Double(label.text!)!
+    var displayedNumber : Double = 0
+    
+    struct numStack<Element> {
+        var items = [Element]()
+        mutating func push(_ item: Element) {
+            items.append(item)
+        }
+        mutating func pop() -> Element {
+            return items.removeLast()
+        }
     }
 
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,3 +37,4 @@ class ViewController: UIViewController {
 
 
 }
+
