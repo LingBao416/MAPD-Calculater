@@ -1,10 +1,10 @@
 //
 //  ViewController.swift
-//  Name:Caculator
 //
-//  Author:Ling Bao
-//  StudentID:300901785
-//  Version: 0.1
+//  @Name:Caculator
+//  @Author:Ling Bao
+//  @StudentID:300901785
+//  @Version: 0.1
 //
 
 import UIKit
@@ -109,7 +109,7 @@ class ViewController: UIViewController {
             addOperation = true
             doOperation = sender.tag
         }
-        
+        //Equal Button do caculating
         if sender.tag == 17{
             if doOperation == 13{
                 label.text = String(number1 + displayedNumber)
@@ -130,22 +130,7 @@ class ViewController: UIViewController {
         }
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
